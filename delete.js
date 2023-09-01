@@ -1,3 +1,5 @@
+// This script deletes the temporary files created by the build process.
+
 const fs = require("fs");
 
 const comp = "./css/style.comp.css";
@@ -10,7 +12,6 @@ try {
     fs.unlinkSync(post);
     fs.unlinkSync(prefix);
     fs.unlinkSync(sass);
-    //file removed
 } catch (err) {
     console.error(err);
 }
